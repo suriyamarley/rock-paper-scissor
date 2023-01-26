@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+
+
+
+*,*::after,
+*::before{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+html{
+  font-size: 16px;
+
+}
+:root{
+--clr-white:white;
+--clr-black:black;
+--amber-yellow: #ffbe0bff;
+--orange-pantone: #fb5607ff;
+--winter-pink: #ff006eff;
+--blue-violet: #8338ecff;
+--azure-blue: #3a86ffff;
+--box-shadow: 0px 22px 12px rgba(0,0,0,0.15);
+}
+body{
+  font-family: 'El Messiri', sans-serif;
+  /* background-image: url(../images/rock.jfif); */
+  background-color: yellow;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/* global css */
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
+.card-container{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 5rem;
+  margin: 0 auto;
+  width: 28%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.card-info,.weapons-container {
+  min-height: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card-titile{
+  background-color: purple;
+  padding: 1rem 1rem;
+  color: white;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-size:contain;
+}
+
+.score-container{
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  background-color:rgb(12, 142, 193);
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.score-container span{
+  font-weight: 700;
+}
+
+.btn-weapon{
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  background-color: var(--amber-yellow);
+  border-radius: 50%;
+  border: 2px solid var(--amber-yellow);
+  color:var(--clr-black);
+  font-size: 2.5rem;
+  box-shadow:20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;;
+  cursor: pointer;
+
+}
+
+
+
+.btn-weapon:hover{
+  transform: scale(1.05) translateY(-5px);
+}
+
+.result-container{
+  margin-top: 2rem;
+  min-height: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  gap: 1rem;
+  font-weight: 600;
+  color: var(--clr-white);
+  box-shadow: var(--box-shadow);
+  background-color: var(--winter-pink);
+  padding: 1rem 1rem;
+  border-radius: 10px;
+
+}
+.result{
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:700px) {
+
+  .card-container{
+    width:375px;
+  }
+  
+}
